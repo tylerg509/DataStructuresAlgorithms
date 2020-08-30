@@ -55,5 +55,65 @@ Rule 2: Remove Constants
 Rule 3: Different terms for inputs
 Rule 4: Drop non dominants 
 
+function compressBoxes(boxes) {
+    boxes.forEach(function(boxes)) {
+        console.log(boxes)
+    }
+
+    boxes.forEach(function(boxes)) {
+        console.log(boxes)
+    }
+}
+
+This is O(2n) but is simplified to O(n) since we drop the constants
+
+Rule3
+
+function compressBoxes(boxes, boxes2) {
+    boxes.forEach(function(boxes)) {
+        console.log(boxes)
+    }
+
+    boxes2.forEach(function(boxes)) {
+        console.log(boxes)
+    }
+}
+
+BIG0 = O(a + b) 
+Since we have foreach that happens one after another we add. In the next example we have foreach within foreach so we multiply
+
+Rule4
+const boxes = [1,2,3,4,5]
+
+function logAllPairsOfArray(array) {
+    for (let i =0; i < array.length; i++){
+        for(let j = 0; j < array.length; j++) {
+            console.log( array[i], array[j])
+        }
+    }
+}
+
+BIGO = O(n * n) === O(n^2) 
+
+Drop non dominant terms
+function printAllNumbersThenAllPairSums(numbers) {
+
+  console.log('these are the numbers:');
+  numbers.forEach(function(number) {
+    console.log(number);
+  });
+
+  console.log('and these are their sums:');
+  numbers.forEach(function(firstNumber) {
+    numbers.forEach(function(secondNumber) {
+      console.log(firstNumber + secondNumber);
+    });
+  });
+}
+
+printAllNumbersThenAllPairSums([1,2,3,4,5])
+
+O(x^2 + 3x + 100 + x/2) === O(x^2) big O notation. We do not care about insignificant items
+
 ### `yarn start`
 
