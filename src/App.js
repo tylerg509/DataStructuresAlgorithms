@@ -1,26 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as Big0 from './BigO/BigO';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container">
+            <div className="header">Find Nemo:</div>
+            <div>{Big0.findNemo(Big0.large)}</div>
+        </div>
+    );
 }
 
 export default App;
