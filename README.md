@@ -49,5 +49,11 @@ function anotherFunChallenge(input) {
 
 BIGO = 4 + 7n
 
+[BIGO Rule Book]()
+Rule 1: Worst case
+Rule 2: Remove Constants
+Rule 3: Different terms for inputs
+Rule 4: Drop non dominants 
+
 ### `yarn start`
 
