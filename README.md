@@ -128,7 +128,7 @@ O(n log(n)) Log Liniear- usually sorting operations
 O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two
 nested loops
 O(2^n) Exponential- recursive algorithms that solves a problem of size N
-O(n!) Factorial- you are adding a loop for every element
+O(n!) Factorial- you are adding a loop for every element (very expensive and you are doing something wrong)
 Iterating through half a collection is still O(n)
 Two separate collections: O(a * b)
 
@@ -152,6 +152,35 @@ Variables
 Data Structures
 Function Call
 Allocations
+
+# Pillars of code
+
+Scaleable - speed and memory
+
+1. Readale
+2. Memory - space complexity
+3. Speed - time complexity
+
+1. Heap - where we store our variables
+2. Stack - where we keep track of function calls
+
+function booooo(n){
+  for (let i = 0; i < n.length; i++ ) {
+    console.log('boooo!)
+  }
+}
+
+boooo([1,2,3,4]) // O(1)
+
+function arrayOfHiNTTimes(n){
+  let hiArray = [] // new data structure
+  for(let i = 0; i < n.length; i++) {
+    hiArray[i] = 'hi' // new memory in our computers n times
+  }
+  return hiArray;
+}
+
+arrayOfHiNTTimes(6) // O(n)
 
 ### `yarn start`
 
