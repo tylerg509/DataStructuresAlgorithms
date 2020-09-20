@@ -27,21 +27,21 @@ class MyArray {
         this.length = 0;
         this.data = {}
     }
-    get(index) {
+    get(index) {//0(1)
         return this.data[index];
     }
-    push(item){
+    push(item){//0(1)
         this.data[this.length] = item;
         this.length++
         return this.length;
     }
-    pop(){
+    pop(){ //0(1)
         const lastItem = this.data[this.length-1];
         delete this.data[this.length-1]
         this.length--
         return lastItem
     }
-    delete(index){
+    delete(index){ //0(n)
         const item = this.data[index];
         this.shiftItems(index)
         return item;
