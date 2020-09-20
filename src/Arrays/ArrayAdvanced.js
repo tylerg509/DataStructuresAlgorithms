@@ -25,6 +25,9 @@ export const referenceTypes = () => {
 export const context = (window) => {
     // scope is created when there are curly brackerts = for ex. when a function is created. Not the same as context
 
+    // All the functions have associated scope and context. 
+    // Scope defines the access to variables of a function when the function is invoked. 
+    // On the other hand, Context is always the value of the reserved word this which is a reference to the object that owns the execution of the code
     const cl = ContextClass = new ContextClass();
     console.log(cl._this)
 
