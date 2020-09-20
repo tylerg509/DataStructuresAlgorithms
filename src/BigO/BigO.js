@@ -1,6 +1,6 @@
 
 
-export const large = new Array(10000).fill('nemo')
+export const large = new Array(10).fill('nemo')
 
 export const findNemo = (array) => {
     let t0 = performance.now();
