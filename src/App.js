@@ -5,6 +5,7 @@ import * as Big0 from './BigO/BigO';
 import { logAll } from './Arrays/Arrays1';
 import { context, referenceTypes } from './Arrays/ArrayAdvanced'
 import { runBuildAnArray } from './Arrays/BuildAnArray';
+import { reverseString, anotherReverse, secondAnotherReverse } from './Arrays/ReverseAString';
 
 function App() {
     return (
@@ -15,6 +16,9 @@ function App() {
             <div>There was a lesson on advanced arrays types {referenceTypes()}</div>
             <div>There was a lesson on advanced arrays context {context(window)}</div>
             <div>There was a lesson on building your own array datastructure {runBuildAnArray()}</div>
+            <div>Practiced reversing a string {reverseString('mesoSoup')}</div>
+            <div>Practiced reversing a easier {anotherReverse('gooose')}</div>
+            <div>Practiced reversing modern {secondAnotherReverse('tyler is the')}</div>
 
         </div>
     );
