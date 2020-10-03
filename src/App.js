@@ -7,6 +7,8 @@ import { context, referenceTypes } from './Arrays/ArrayAdvanced'
 import { runBuildAnArray } from './Arrays/BuildAnArray';
 import { reverseString, anotherReverse, secondAnotherReverse } from './Arrays/ReverseAString';
 import { mergeSortedArray } from './Arrays/MergeSortedArrays'
+import { runMyHashTable } from './HashTables/HashTable'
+
 function App() {
     return (
         <div className="container">
@@ -20,6 +22,7 @@ function App() {
             <div>Practiced reversing a easier {anotherReverse('gooose')}</div>
             <div>Practiced reversing modern {secondAnotherReverse('tyler is the')}</div>
             <div>Practiced merging sorted arrays {mergeSortedArray([0,3,4,31], [4,6,30])}</div>
+            <div>Made a hash table {runMyHashTable()}</div>
 
         </div>
     );

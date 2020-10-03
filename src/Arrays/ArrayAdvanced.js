@@ -28,8 +28,8 @@ export const context = (window) => {
     // All the functions have associated scope and context. 
     // Scope defines the access to variables of a function when the function is invoked. 
     // On the other hand, Context is always the value of the reserved word this which is a reference to the object that owns the execution of the code
-    const cl = ContextClass = new ContextClass();
-    console.log(cl._this)
+    // const cl = ContextClass = new ContextClass();
+    // console.log(cl._this)
 
     const pl = new Player('tyler', 'human');
     pl.introduce();
@@ -47,7 +47,8 @@ export const context = (window) => {
 
 export class ContextClass {
     // this is the context of the object it is inside of
-    constructor(){
+    constructor() {
+        
         this.title = 'advancedArrays context'
         this._this = this
     }
