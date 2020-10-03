@@ -33,6 +33,17 @@ class HashTable {
         
     }
 
+    keys() {
+        const keysArray = [];
+        for (let i=0; i <this.data.length; i++) {
+            if(this.data[i]) {
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+
+        return keysArray;
+    }
+
     // since hash is very fast we consider this 0(1)
     _hash(key) {
         let hash = 0;
@@ -53,6 +64,9 @@ export const runMyHashTable = () => {
 
     console.log(result)
     const grape = myHashTable.get('grapes')
-    console.log('MADE A HASH TABLE')
+    console.log('GET IN HASH TABLE')
     console.log(grape)
+
+    console.log('KEYS FROM HASH TABLE')
+    console.log(myHashTable.keys())
 }
