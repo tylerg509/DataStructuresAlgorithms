@@ -33,6 +33,16 @@ class LinkedList {
         this.length = ++this.length
         return this
     }
+
+    prepend(valueToPrepend) {
+        const valueToAdd = {
+            value: valueToPrepend,
+            next: this.head
+        }
+        this.head = valueToAdd
+        this.length = ++ this.length
+        return this
+    }
 }
 
 export const myLinkedList = (value) => {
@@ -45,6 +55,10 @@ export const myLinkedList = (value) => {
 
     console.log('APPEND TO LIST')
     myList.append(16)
+    console.log(myList)
+
+    console.log('PREPEND TO LIST')
+    myList.prepend(1)
     console.log(myList)
 
 }
