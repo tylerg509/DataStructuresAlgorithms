@@ -8,6 +8,7 @@ import { runBuildAnArray } from './Arrays/BuildAnArray';
 import { reverseString, anotherReverse, secondAnotherReverse } from './Arrays/ReverseAString';
 import { mergeSortedArray } from './Arrays/MergeSortedArrays'
 import { runMyHashTable } from './HashTables/HashTable'
+import { findFirstRecurring, array1, array2, array3 } from './HashTables/HashTableExample';
 
 function App() {
     return (
@@ -23,6 +24,9 @@ function App() {
             <div>Practiced reversing modern {secondAnotherReverse('tyler is the')}</div>
             <div>Practiced merging sorted arrays {mergeSortedArray([0,3,4,31], [4,6,30])}</div>
             <div>Made a hash table {runMyHashTable()}</div>
+            <div>Made a function the finds the first recurring {findFirstRecurring(array1)}</div>
+            <div>Made a function the finds the first recurring {findFirstRecurring(array2)}</div>
+            <div>Made a function the finds the first recurring {findFirstRecurring(array3)}</div>
 
         </div>
     );
