@@ -8,6 +8,8 @@ export const array2 = [2,1,1,2,3,5,1,2,4]
 
 export const array3 = [2,3,4,5]
 
+// hash table is an object in JS
+
 // note that if you loop through the array and compare each value using 2 for loops you could end up with 0(n^2)
 
 // 0(n) 
