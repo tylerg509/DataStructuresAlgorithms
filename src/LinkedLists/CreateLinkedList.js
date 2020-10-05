@@ -104,6 +104,7 @@ export const myLinkedList = (value) => {
     const myList = new LinkedList(value)
     console.log('LINKED LIST CLASS')
     console.log(myList)
+    
     console.log('APPEND TO LIST')
     myList.append(5)
     console.log(myList)
