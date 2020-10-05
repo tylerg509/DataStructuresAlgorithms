@@ -30,7 +30,7 @@ function App() {
             <div>Made a function the finds the first recurring {findFirstRecurring(array2)}</div>
             <div>Made a function the finds the first recurring {findFirstRecurring(array3)}</div>
             <div>Made a linked list class {myLinkedList(10)}</div>
-            <div>Made a linked list class {myDoubleLinkedList(8)}</div>
+            <div>Made a double linked list class {myDoubleLinkedList(8)}</div>
 
         </div>
     );

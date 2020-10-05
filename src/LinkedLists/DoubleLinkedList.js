@@ -81,6 +81,26 @@ class DoubleLinkedList {
         return currentNode;
     }
 
+    reverse() {
+        if (!this.head.next) {
+            return this.head;
+        }
+        let first = this.head;
+        this.tail = this.head;
+        let second = first.next;
+        while (second) {
+            const temp = second.next;
+            second.next = first;
+            first = second;
+            second = temp;
+        }
+
+        this.head.next = null;
+        this.head = first;
+        return this.printList()
+        
+    }
+
     insert(index, value) {
         if(index >= this.length) {
             return this.append(value);
@@ -144,5 +164,9 @@ export const myDoubleLinkedList = (value) => {
     myList.remove(2)
     console.log('REMOVE FROM LIST')
     console.log(myList)
+
+    console.log('REVERSE')
+    console.log(myList.printList())
+    console.log(myList.reverse())
 
 }
