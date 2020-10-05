@@ -90,6 +90,14 @@ class LinkedList {
 
         return this.printList()
     }
+
+    remove(index) {
+
+        let nodeToReplace = this.traverseToIndex(index-1)
+        nodeToReplace.next = nodeToReplace.next.next
+        this.length--
+        return this.printList()
+    }
 }
 
 export const myLinkedList = (value) => {
@@ -108,8 +116,12 @@ export const myLinkedList = (value) => {
     myList.prepend(1)
     console.log(myList)
 
-    myList.insert(0, 56)
+    myList.insert(2, 56)
     console.log('INSERT INTO LIST')
+    console.log(myList)
+
+    myList.remove(2)
+    console.log('REMOVE FROM LIST')
     console.log(myList)
 
 }
