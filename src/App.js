@@ -9,7 +9,8 @@ import { reverseString, anotherReverse, secondAnotherReverse } from './Arrays/Re
 import { mergeSortedArray } from './Arrays/MergeSortedArrays'
 import { runMyHashTable } from './HashTables/HashTable'
 import { findFirstRecurring, array1, array2, array3 } from './HashTables/HashTableExample';
-import { myLinkedList } from './LinkedLists/CreateLinkedList'
+import { myLinkedList } from './LinkedLists/LinkedList'
+import { myDoubleLinkedList } from './LinkedLists/DoubleLinkedList'
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
             <div>Made a function the finds the first recurring {findFirstRecurring(array2)}</div>
             <div>Made a function the finds the first recurring {findFirstRecurring(array3)}</div>
             <div>Made a linked list class {myLinkedList(10)}</div>
+            <div>Made a linked list class {myDoubleLinkedList(8)}</div>
 
         </div>
     );
