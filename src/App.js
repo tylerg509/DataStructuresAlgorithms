@@ -11,6 +11,7 @@ import { runMyHashTable } from './HashTables/HashTable'
 import { findFirstRecurring, array1, array2, array3 } from './HashTables/HashTableExample';
 import { myLinkedList } from './LinkedLists/LinkedList'
 import { myDoubleLinkedList } from './LinkedLists/DoubleLinkedList'
+import { stackLinkedList } from './StackQueue/StackLinkedList'
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
             <div>Made a function the finds the first recurring {findFirstRecurring(array3)}</div>
             <div>Made a linked list class {myLinkedList(10)}</div>
             <div>Made a double linked list class {myDoubleLinkedList(8)}</div>
+            <div>Made a stack linked list class {stackLinkedList()}</div>
 
         </div>
     );

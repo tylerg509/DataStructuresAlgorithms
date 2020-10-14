@@ -182,5 +182,10 @@ function arrayOfHiNTTimes(n){
 
 arrayOfHiNTTimes(6) // O(n)
 
+# Stacks vs Queues
+1. Stack = LIFO. lookup, pop, push, peek
+2. Queue = FIFO. lookup, enqueue, dequeue, peek. 
+  a. do not build a queue with an array because if you remove in middle you have to shift everything. 
+
 ### `yarn start`
 
