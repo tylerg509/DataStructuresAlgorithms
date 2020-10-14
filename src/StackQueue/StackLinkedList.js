@@ -15,7 +15,7 @@ class Node {
     }
     // See top element/node
     peek() {
-        return this.top.value
+        return this.top
     }
 
     // add node to top of stack
@@ -23,9 +23,8 @@ class Node {
         const newNode = new Node(value)
 
         if (this.isEmpty()){
-            this.bottom = this.top;
+            this.bottom = newNode;
             this.top = newNode;
-            newNode.next = this.bottom;
         } else {
             newNode.next = this.top;
             this.bottom = this.top.next;
@@ -38,6 +37,12 @@ class Node {
 
     // remove from top of stack
     pop(){
+        if (!this.top) {
+            return null
+        }
+        if (this.top === this.bottom) {
+            this.bottom = null;
+        }
         this.top = this.top.next;
         this.length--
     }
@@ -65,6 +70,14 @@ class Node {
         console.log(value)
 
         console.log('stack linked list pop')
+        myStack.pop()
+        console.log(myStack)
+
+        console.log('stack linked list isEmpty')
+        console.log(myStack.isEmpty())
+
+        console.log('stack linked list remove all')
+        myStack.pop()
         myStack.pop()
         console.log(myStack)
 
