@@ -7,7 +7,7 @@ class Stack {
     }
     // See top element/node
     peek() {
-        return this.stackArray[0]
+        return this.stackArray[this.stackArray.length - 1]
     }
 
     // add node to top of stack
