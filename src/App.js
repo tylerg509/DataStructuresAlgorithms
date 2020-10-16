@@ -13,6 +13,7 @@ import { myLinkedList } from './LinkedLists/LinkedList'
 import { myDoubleLinkedList } from './LinkedLists/DoubleLinkedList'
 import { stackLinkedList } from './StackQueue/StackLinkedList'
 import { stackArray } from './StackQueue/StackArray'
+import { myQueue } from './StackQueue/Queue';
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
             <div>Made a double linked list class {myDoubleLinkedList(8)}</div>
             <div>Made a stack linked list class {stackLinkedList()}</div>
             <div>Made a stack array class {stackArray()}</div>
+            <div>Made a stack array class {myQueue()}</div>
 
         </div>
     );
