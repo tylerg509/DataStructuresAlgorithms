@@ -1,3 +1,4 @@
+// Queue = FIFO
 
 class Node {
     constructor(value){
@@ -18,7 +19,7 @@ class Queue {
         return this.first;
     }
 
-    // add to queue
+    // add to bottom of queue
     enqueue(value) {
         try {
             const newNode = new Node(value);
@@ -53,6 +54,7 @@ class Queue {
             this.first = this.first.next;
             this.length--
             return this;
+            
         } catch (err) {
             console.error(err)
         }
