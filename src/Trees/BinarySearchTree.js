@@ -50,34 +50,62 @@ class BinarySearchTree {
         if (this.root === null) {
             this.root = newNode;
         } else {
-            if (this.root === null) {
-                this.root = newNode;
-            } else {
-                let currentNode = this.root;
-                while (true) {
-                    if (value < currentNode.value) {
-                        if (!currentNode.left) {
-                            currentNode.left = newNode;
+            let currentNode = this.root;
+            while (true) {
+                if (value < currentNode.value) {
+                    if (!currentNode.left) {
+                        currentNode.left = newNode;
 
-                            return this;
-                        }
-
-                        currentNode = currentNode.left;
-                    } else {
-                        if (!currentNode.right) {
-                            currentNode.right = newNode;
-
-                            return this;
-                        }
-
-                        currentNode = currentNode.right;
+                        return this;
                     }
+
+                    currentNode = currentNode.left;
+                } else {
+                    if (!currentNode.right) {
+                        currentNode.right = newNode;
+
+                        return this;
+                    }
+
+                    currentNode = currentNode.right;
                 }
             }
         }
     }
 
-    lookup(value) {}
+    lookup(value) {
+
+        if (this.root === null) {
+            console.error('The tree is empty')
+            return;
+        } else {
+            let currentNode = this.root;
+            while (true) {
+                if (currentNode === null || currentNode.value === null) {
+                    console.error('The node was not found - handled')
+                    return
+                }
+                if (value < currentNode.value) {
+
+                    currentNode = currentNode.left;
+
+                } else if (value > currentNode.value) {
+
+                    currentNode = currentNode.right;
+
+                } else if (value === currentNode.value) {
+
+                    return currentNode;
+
+                } else {
+                    console.error('The node was not found - not handled')
+
+                    return
+                }
+
+            }
+        }
+    }
 }
 
 //      9
@@ -102,8 +130,15 @@ export const binarySearchTree = () => {
     bst.insert(6);
     bst.insert(15);
     bst.insert(170);
+    const red = bst.lookup(15);
+    const blue = bst.lookup(1000);
 
+    console.log('binary search tree insert')
     console.log(bst);
+    console.log('binary search tree lookup')
+    console.log(red)
+    console.log('binary search tree error handle')
+    console.log(blue)
 
     // console.log(bst)
 };
