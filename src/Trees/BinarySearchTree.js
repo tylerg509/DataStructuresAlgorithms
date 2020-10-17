@@ -29,6 +29,8 @@ import { Player } from '../Arrays/ArrayAdvanced';
 // insert 0(log N)
 // delete 0(log N)
 
+// See priority queue as well and heaps
+
 /////////// notes ///////////
 
 class Node {
