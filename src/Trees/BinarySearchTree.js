@@ -200,7 +200,7 @@ export const binarySearchTree = () => {
     bst.insert(15);
     bst.insert(170);
     const red = bst.lookup(15);
-    const blue = bst.lookup(1000);
+    bst.lookup(1000);
 
     console.log('binary search tree insert');
     console.log(JSON.parse(JSON.stringify(bst)));
