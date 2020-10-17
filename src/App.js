@@ -15,6 +15,7 @@ import { stackLinkedList } from './StackQueue/StackLinkedList'
 import { stackArray } from './StackQueue/StackArray'
 import { myQueue } from './StackQueue/Queue';
 import { binarySearchTree} from './Trees/BinarySearchTree'
+import { mygraph } from './Graphs/Graph';
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
             <div>Made a stack array class {stackArray()}</div>
             <div>Made a stack array class {myQueue()}</div>
             <div>Made a binary search tree {binarySearchTree()}</div>
+            <div>Made a graph {mygraph()}</div>
 
         </div>
     );
