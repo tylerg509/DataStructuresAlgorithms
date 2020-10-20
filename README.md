@@ -187,5 +187,21 @@ arrayOfHiNTTimes(6) // O(n)
 2. Queue = FIFO. lookup, enqueue, dequeue, peek. 
   a. do not build a queue with an array because if you remove in middle you have to shift everything. 
 
+#Recursion 
+1. Identify the base case
+2. Identify the recursive case
+3. Get closer and closer and return when needed. Usually you have two returns in a recursive function
+
+ex. 
+let couter = 0;
+function inception() {
+  if(counter > 3) {
+    return 'done'
+  }
+
+  counter++
+  return inception()
+} 
+
 ### `yarn start`
 
