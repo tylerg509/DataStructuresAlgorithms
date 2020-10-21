@@ -18,6 +18,7 @@ import { binarySearchTree} from './Trees/BinarySearchTree'
 import { mygraph } from './Graphs/Graph';
 import { findFactorialRecursive, findFactorialIterative } from './Recursion/RecursionFactorial';
 import { fibonacciIterative, fibonacciRecursive } from './Recursion/RecursionFibonacci';
+import { bubbleSort, numbersForSort, runBubbleSort } from './Sorting/BubbleSort';
 
 function App() {
     return (
@@ -47,6 +48,7 @@ function App() {
             <div>Made a recursive function iterative {findFactorialIterative( 5)}</div>
             <div>Made a recursive function fibonacci {fibonacciRecursive(21)}</div>
             <div>Made a recursive function fibonacci {fibonacciIterative(21)}</div>
+            <div>Made a bubbleSort function {runBubbleSort(numbersForSort)}</div>
 
         </div>
     );
