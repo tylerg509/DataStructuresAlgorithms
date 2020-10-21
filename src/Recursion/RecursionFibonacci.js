@@ -18,7 +18,14 @@ export const fibonacciIterative = (n) => {
 
 // 0(2^n) = exponential - recursive algorithms that solve  a problem of size n (worst than two nested for loops)
 // note if you try to run this with 43 it will take a sec to run
-
+// can make the argument that this is easier to read, but it increases call stack significantly compared to iterative
+// most of time iterative better option
+// traversing/searching trees or graphs is good use case. some instances of search
+// Every time you are using a tree or converting something into a tree, consider recursion
+// how to use/use cases
+// 1) divided into a number of subproblems that are smaller instances of the same problem 
+// 2) each instance of the subproblem is identical in nature
+// 3) the solutions of each subproblem can be combined to solve the problem at hand
 export const fibonacciRecursive = (n) => {
     if (n < 2) {
         return n;
