@@ -5,7 +5,6 @@
 // value is an object == { counter: value.counter, answer: value.answer }
 export const findFactorialRecursive = ( value ) => {
 
-    console.log('run')
     if ( value.counter === 1 ) {
         
         return {counter: 0, answer: value.answer};
@@ -13,14 +12,19 @@ export const findFactorialRecursive = ( value ) => {
 
     value.counter--
     value.answer = value.answer * (value.counter)
-    console.log(value.answer)
     return findFactorialRecursive({ counter: value.counter, answer: value.answer })
-
-
 
 }
 
-// const findFactorialIterative = (value) => {
+export const findFactorialIterative = (value) => {
 
-//     return answer;
-// }
+    let counter = value
+    let answer = value;
+    while (counter > 1 ) {
+        answer = answer * (counter -1)
+        console.log(answer)
+        counter--
+    }
+    
+    return answer;
+}

@@ -16,7 +16,7 @@ import { stackArray } from './StackQueue/StackArray'
 import { myQueue } from './StackQueue/Queue';
 import { binarySearchTree} from './Trees/BinarySearchTree'
 import { mygraph } from './Graphs/Graph';
-import { findFactorialRecursive } from './Recursion/RecursionFactorial';
+import { findFactorialRecursive, findFactorialIterative } from './Recursion/RecursionFactorial';
 
 function App() {
     return (
@@ -43,6 +43,7 @@ function App() {
             <div>Made a binary search tree {binarySearchTree()}</div>
             <div>Made a graph {mygraph()}</div>
             <div>Made a recursive function {findFactorialRecursive({counter: 5, answer: 5}).answer}</div>
+            <div>Made a recursive function {findFactorialIterative( 5)}</div>
 
         </div>
     );
