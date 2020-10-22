@@ -21,6 +21,7 @@ import { fibonacciIterative, fibonacciRecursive } from './Recursion/RecursionFib
 import { bubbleSort, numbersForSort, runBubbleSort } from './Sorting/BubbleSort';
 import { runSelectionSort } from './Sorting/SelectionSort';
 import { runInsertionSort } from './Sorting/InsertSort';
+import { runMergeSort } from './Sorting/MergeSort'
 
 function App() {
     return (
@@ -53,6 +54,7 @@ function App() {
             <div>Made a bubble sort function {runBubbleSort(numbersForSort)}</div>
             <div>Made a selection sort function {runSelectionSort(numbersForSort)}</div>
             <div>Made a insert sort function {runInsertionSort(numbersForSort)}</div>
+            <div>Made a merge sort function {runMergeSort(numbersForSort)}</div>
 
         </div>
     );
