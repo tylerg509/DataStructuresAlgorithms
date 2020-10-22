@@ -19,6 +19,8 @@ import { mygraph } from './Graphs/Graph';
 import { findFactorialRecursive, findFactorialIterative } from './Recursion/RecursionFactorial';
 import { fibonacciIterative, fibonacciRecursive } from './Recursion/RecursionFibonacci';
 import { bubbleSort, numbersForSort, runBubbleSort } from './Sorting/BubbleSort';
+import { runSelectionSort } from './Sorting/SelectionSort';
+import { runInsertionSort } from './Sorting/InsertSort';
 
 function App() {
     return (
@@ -48,7 +50,9 @@ function App() {
             <div>Made a recursive function iterative {findFactorialIterative( 5)}</div>
             <div>Made a recursive function fibonacci {fibonacciRecursive(21)}</div>
             <div>Made a recursive function fibonacci {fibonacciIterative(21)}</div>
-            <div>Made a bubbleSort function {runBubbleSort(numbersForSort)}</div>
+            <div>Made a bubble sort function {runBubbleSort(numbersForSort)}</div>
+            <div>Made a selection sort function {runSelectionSort(numbersForSort)}</div>
+            <div>Made a insert sort function {runInsertionSort(numbersForSort)}</div>
 
         </div>
     );
