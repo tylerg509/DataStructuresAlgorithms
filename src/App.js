@@ -22,6 +22,7 @@ import { bubbleSort, numbersForSort, runBubbleSort } from './Sorting/BubbleSort'
 import { runSelectionSort } from './Sorting/SelectionSort';
 import { runInsertionSort } from './Sorting/InsertSort';
 import { runMergeSort } from './Sorting/MergeSort'
+import { runQuickSort } from './Sorting/QuickSort';
 
 function App() {
     return (
@@ -55,6 +56,7 @@ function App() {
             <div>Made a selection sort function {runSelectionSort(numbersForSort)}</div>
             <div>Made a insert sort function {runInsertionSort(numbersForSort)}</div>
             <div>Made a merge sort function {runMergeSort(numbersForSort)}</div>
+            <div>Made a quick sort function {runQuickSort(numbersForSort)}</div>
 
         </div>
     );
