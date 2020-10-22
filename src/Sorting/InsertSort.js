@@ -1,5 +1,6 @@
 
-
+// when data is almost sorted this is really fast or when the data set is small
+// 
 const insertionSort = (array) => {
     const length = array.length;
     for (let i = 0; i < length; i++) {
