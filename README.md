@@ -225,5 +225,12 @@ function inception() {
 4. bad because can get slow 
 9,4,1,6,20,15,170
 
+# bellman algorithm
+- effective at shortest path because it considers negative weight
+- takes a long time to run potentially
+- not as efficient
+# dijkstra algorithm
+- faster/more efficient
+- does not accomodate for negative nodes
 ### `yarn start`
 
