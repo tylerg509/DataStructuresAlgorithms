@@ -203,5 +203,20 @@ function inception() {
   return inception()
 } 
 
+# linear search 0(n) would look at each item
+# binary search (log(n)) - find median and throw out the rest - only works if sorted 
+-- when inserting we should sort while inserting if we want to use this
+
+# searching a graph or tree 
+      9
+    4   20
+  1 6 15  170
+
+# breadth first search. 
+1. move left to right in each level of the tree until you find what you are looking for
+9,4,20,1,6,15,170
+# depth first search
+1. start at top and go down until you reach a node with no children. If you reach bottom go up a level
+9,4,1,6,20,15,170
 ### `yarn start`
 
