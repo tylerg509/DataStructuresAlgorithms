@@ -214,7 +214,66 @@ class BinarySearchTree {
 
         return this.breadthFirstSearchRecursive(queue,list)
     }
+
+    depthFirstSearchInOrder() {
+        return traverseInOrder(this.root, [])
+    }
+
+    depthFirstSearchPostOrder() {
+        return traversePostOrder(this.root, [])
+
+    }
+
+    depthFirstSearchPreOrder() {
+        return traversePreOrder(this.root, [])
+
+    }
 }
+
+const traverseInOrder = (node, list) => {
+    if (node.left) {
+        traverseInOrder(node.left, list);
+    }
+
+    list.push(node.value)
+
+    if(node.right) {
+        traverseInOrder(node.right, list)
+    }
+
+    return list;
+}
+
+const traversePreOrder = (node, list) => {
+    list.push(node.value)
+
+    if (node.left) {
+        traversePreOrder(node.left, list);
+    }
+
+
+    if(node.right) {
+        traversePreOrder(node.right, list)
+    }
+
+    return list;
+}
+
+const traversePostOrder = (node, list) => {
+
+    if (node.left) {
+        traversePostOrder(node.left, list);
+    }
+
+
+    if(node.right) {
+        traversePostOrder(node.right, list)
+    }
+    list.push(node.value)
+
+    return list;
+}
+
 
 //      9
 //   4    20
@@ -253,4 +312,16 @@ export const binarySearchTree = () => {
     const bfs = bst.breadthFirstSearch();
     console.log('binary search tree breadth first search function')
     console.log(bfs)
+
+    const dfsInOrder = bst.depthFirstSearchInOrder()
+    console.log('binary search tree depth first search in order')
+    console.log(dfsInOrder)
+
+    const dfsPreOrder = bst.depthFirstSearchPreOrder()
+    console.log('binary search tree depth first search pre order')
+    console.log(dfsPreOrder)
+
+    const dfsPostOrder = bst.depthFirstSearchPostOrder()
+    console.log('binary search tree depth first search post order')
+    console.log(dfsPostOrder)
 };
