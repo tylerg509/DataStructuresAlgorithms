@@ -46,7 +46,7 @@ function App() {
             <div>Made a stack linked list class {stackLinkedList()}</div>
             <div>Made a stack array class {stackArray()}</div>
             <div>Made a stack array class {myQueue()}</div>
-            <div>Made a binary search tree {binarySearchTree()}</div>
+            <div>Made a binary search tree and a breadth first search function {binarySearchTree()}</div>
             <div>Made a graph {mygraph()}</div>
             <div>Made a recursive function factorial {findFactorialRecursive(5)}</div>
             <div>Made a recursive function iterative {findFactorialIterative( 5)}</div>

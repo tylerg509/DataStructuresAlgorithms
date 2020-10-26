@@ -232,5 +232,8 @@ export const binarySearchTree = () => {
 
     bst.remove(20);
     console.log(bst);
-    // console.log(bst)
+    
+    const bfs = bst.breadthFirstSearch();
+    console.log('binary search tree breadth first search function')
+    console.log(bfs)
 };
