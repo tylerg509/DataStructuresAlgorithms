@@ -215,6 +215,8 @@ class BinarySearchTree {
         return this.breadthFirstSearchRecursive(queue,list)
     }
 
+    // depth first search does not need queue
+    // 0(whatever the height of tree is)
     depthFirstSearchInOrder() {
         return traverseInOrder(this.root, [])
     }
