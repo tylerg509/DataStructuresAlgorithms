@@ -212,11 +212,18 @@ function inception() {
     4   20
   1 6 15  170
 
-# breadth first search. 
+# breadth first search. 0(n)
 1. move left to right in each level of the tree until you find what you are looking for
+2. good for finding shortest path
+3. bad because requires more memory
+4. good if you know that what you are searching for is at top of tree/graph
 9,4,20,1,6,15,170
-# depth first search
+# depth first search 0(n)
 1. start at top and go down until you reach a node with no children. If you reach bottom go up a level
+2. good less memory
+3. use if asking does path exist?
+4. bad because can get slow 
 9,4,1,6,20,15,170
+
 ### `yarn start`
 
