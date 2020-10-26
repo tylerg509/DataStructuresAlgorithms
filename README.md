@@ -232,5 +232,17 @@ function inception() {
 # dijkstra algorithm
 - faster/more efficient
 - does not accomodate for negative nodes
+
+# When to use dynamic programming
+1. Can be divided into subproblem
+2. Recursive solution
+3. Are there repetitive subproblems?
+4. Memoize subproblems
+
+
+
+
+
+
 ### `yarn start`
 
