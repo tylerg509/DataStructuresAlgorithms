@@ -24,7 +24,7 @@ import { runInsertionSort } from './Sorting/InsertSort';
 import { runMergeSort } from './Sorting/MergeSort'
 import { runQuickSort } from './Sorting/QuickSort';
 import { runMemoizedAdd80 } from './DynamicProgramming/Memoization';
-import { runFibonacciMemo } from './DynamicProgramming/MemoFibonacci'
+import { runFibonacciMemo, runFibonacciMemo2 } from './DynamicProgramming/MemoFibonacci'
 
 function App() {
     return (
@@ -61,6 +61,8 @@ function App() {
             <div>Made a quick sort function {runQuickSort(numbersForSort)}</div>
             <div>Made a memoized function {runMemoizedAdd80(5)}</div>
             <div>Made a memoized fibonacci function {runFibonacciMemo()}</div>
+            <div>Made a memoized another fibonacci function {runFibonacciMemo2()}</div>
+
         </div>
     );
 }
