@@ -18,12 +18,13 @@ import { binarySearchTree} from './Trees/BinarySearchTree'
 import { mygraph } from './Graphs/Graph';
 import { findFactorialRecursive, findFactorialIterative } from './Recursion/RecursionFactorial';
 import { fibonacciIterative, fibonacciRecursive } from './Recursion/RecursionFibonacci';
-import { bubbleSort, numbersForSort, runBubbleSort } from './Sorting/BubbleSort';
+import { numbersForSort, runBubbleSort } from './Sorting/BubbleSort';
 import { runSelectionSort } from './Sorting/SelectionSort';
 import { runInsertionSort } from './Sorting/InsertSort';
 import { runMergeSort } from './Sorting/MergeSort'
 import { runQuickSort } from './Sorting/QuickSort';
 import { runMemoizedAdd80 } from './DynamicProgramming/Memoization';
+import { runFibonacciMemo } from './DynamicProgramming/MemoFibonacci'
 
 function App() {
     return (
@@ -59,7 +60,7 @@ function App() {
             <div>Made a merge sort function {runMergeSort(numbersForSort)}</div>
             <div>Made a quick sort function {runQuickSort(numbersForSort)}</div>
             <div>Made a memoized function {runMemoizedAdd80(5)}</div>
-
+            <div>Made a memoized fibonacci function {runFibonacciMemo()}</div>
         </div>
     );
 }
